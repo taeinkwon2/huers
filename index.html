@@ -158,14 +158,14 @@ table td code, table th code{
 
 
 /* === HUERS slide spacing & rhythm normalization === */
-/* 모든 슬라이드 카드 안쪽 상하 패딩 축소 — 슬라이드 사이 총 여백 8px (4px+4px) */
+/* 섹션 구분 여백 — 모든 카드(텍스트/이미지/영상) 공통인 .card-body 에 상하 32px 적용 → 섹션 사이 64px */
 .card-body{
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
 }
-/* 섹션(슬라이드) 구분 여백 — 카드 내부 상하 패딩 32px → 섹션 사이 64px (일반 홈페이지 수준) */
+/* 텍스트 전용 내부 패딩은 0으로 (card-body 패딩과 중복 방지, 이미지/텍스트 균일화) */
 .card-wrapper{
-  --card-inner-padding-y: 32px !important;
+  --card-inner-padding-y: 0px !important;
 }
 
 /* 슬라이드 사이 추가 마진 제거 */
