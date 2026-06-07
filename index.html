@@ -183,14 +183,20 @@ table td code, table th code{
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
+  align-items: center !important;
 }
-/* 커버 텍스트 세로 가운데 정렬 (내부 셀이 카드 높이를 채우도록) */
+/* 커버 텍스트 세로+가로 가운데 정렬 (섹션 정중앙) */
 [data-card-body="z2v97v4wia840nh"] .card-layout,
-[data-card-body="z2v97v4wia840nh"] .card-content{
+[data-card-body="z2v97v4wia840nh"] .card-content,
+[data-card-body="z2v97v4wia840nh"] [data-node-view-content-inner="card"],
+[data-card-body="z2v97v4wia840nh"] .node-cardLayoutItem,
+[data-card-body="z2v97v4wia840nh"] .card-layout-cell-bg{
   flex: 1 1 auto !important;
+  width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
+  align-items: center !important;
 }
 
 /* 슬라이드 사이 추가 마진 제거 */
